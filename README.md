@@ -15,9 +15,13 @@ Validation: Event-study specification confirms flat, insignificant pre-trends ah
 Key results
 
 Flights: −7.4% 
+
 Passengers: −15.1% 
+
 Seat capacity: −9.9% 
+
 Load factor: No significant change
+
 CO2 emissions (estimated): −2.7% (not statistically significant)
 
 The unchanged load factor suggests airlines cut capacity roughly in proportion to falling demand rather than flying emptier planes. The smaller, statistically weaker decline in estimated CO2 relative to the decline in flights is consistent with rerouting over longer alternative corridors partially offsetting the emissions benefit of fewer flights — though this estimate should be treated as imprecise.
@@ -32,7 +36,9 @@ Limitations
 
 
 Treatment is inferred from route geography (great-circle path intersecting FIR boundaries) rather than observed actual flight paths.
+
 CO2 estimates rely on distance-band fuel-burn averages and assumed rerouting multipliers, not directly observed fuel consumption.
+
 The placebo test returns small but statistically significant coefficients for flights, seats, and CO2 (though far smaller in magnitude than the post-closure estimates), indicating some residual pre-trend variation that should temper confidence in the exact point estimates.
 
 
@@ -41,8 +47,11 @@ Data sources
 All data used are public and require no registration:
 
 Eurostat Aviation Passenger Transport (avia_paoc) and aircraft-type datasets (avia_tf_aca) — ec.europa.eu/eurostat
+
 ICAO FIR boundary polygons — gis.icao.int/icaofir
+
 ICAO Carbon Emissions Calculator methodology — icao.int
+
 OurAirports airport coordinate database — ourairports.com
 
 
@@ -50,5 +59,7 @@ Repo structure
 
 
 notebook1_data.ipynb — data construction, route classification, FIR-transit logic
+
 notebook2_co2.ipynb — CO2 emissions estimation from flight counts and distance-band fuel burn
+
 notebook3_analysis.ipynb — TWFE estimation, event study, heterogeneity analysis, robustness checks
