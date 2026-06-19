@@ -28,11 +28,11 @@ Results hold under three checks: including COVID-period observations, excluding 
 
 Limitations
 
-Treatment is inferred from route geography (great-circle path intersecting FIR boundaries) rather than observed actual flight paths.
+- Treatment is inferred from route geography (great-circle path intersecting FIR boundaries) rather than observed actual flight paths.
 
-CO2 estimates rely on distance-band fuel-burn averages and assumed rerouting multipliers, not directly observed fuel consumption.
+- CO2 estimates rely on distance-band fuel-burn averages and assumed rerouting multipliers, not directly observed fuel consumption.
 
-The placebo test returns small but statistically significant coefficients for flights, seats, and CO2 (though far smaller in magnitude than the post-closure estimates), indicating some residual pre-trend variation that should temper confidence in the exact point estimates.
+- The placebo test returns small but statistically significant coefficients for flights, seats, and CO2 (though far smaller in magnitude than the post-closure estimates), indicating some residual pre-trend variation that should temper confidence in the exact point estimates.
 
 
 Data sources
